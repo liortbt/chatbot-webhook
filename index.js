@@ -4,13 +4,11 @@ const app = express();
 const VERIFY_TOKEN = process.env.MYSECURETOKEN; // Replace with your chosen token
 
 app.get("/webhook", (req, res) => {
-
-        console.log(req);
         res.status(200).send("challenge"); // Respond with the challenge token
     
 });
 
-app.post("/", (req, res) => {
+app.post("/webhook", (req, res) => {
     console.log(req);
     res.status(200).send("challenge"); // Respond with the challenge token
 
