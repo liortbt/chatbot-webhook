@@ -1,4 +1,6 @@
-const express = require("express");
+import express from "express";
+
+const express = import("express");
 const app = express();
 
 const VERIFY_TOKEN = process.env.MYSECURETOKEN; // Replace with your chosen token
